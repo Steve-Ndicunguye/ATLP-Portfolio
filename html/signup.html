@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/signup.css" />
+    <title>Steve Ndicunguye</title>
+  </head>
+  <body>
+    <nav class="navbar defaultMargin">
+      <div class="brand__container">
+        <div class="brand">
+          <h2>Full Stack Web Developer</h2>
+        </div>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="index.html">Back to Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="center">
+      <h1>Sign Up</h1>
+      <form method="post" id="signupForm">
+        <div id="error" style="text-align: center; padding-top: 10px; color: red;"></div>
+        <div id="errorEmail" style="text-align: center; padding-top: 10px; color: red;"></div>
+        <div id="errorPassword" style="text-align: center; padding-top: 10px; color: red;"></div>
+        <div id="errorValidation" style="text-align: center; padding-top: 10px; color: red;"></div>
+        <div id="firstnameValidation" style="text-align: center; padding-top: 10px; color: red;"></div>
+        <div id="lastnameValidation" style="text-align: center; padding-top: 10px; color: red;"></div>
+        <div id="message" style="text-align: center; padding-top: 10px; color: red;"></div>
+        <div id="messageSuccess" style="text-align: center; padding-top: 10px; color: green;"></div>
+        
+        <div class="txt_field">
+            <input type="text" id="email">
+            <span></span>
+            <label>Your email</label>
+          </div>
+        <div class="txt_field">
+          <input type="password" id="password">
+          <span></span>
+          <label>Create a password</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" id="firstname">
+            <span></span>
+            <label>First Name</label>
+          </div>
+          <div class="txt_field">
+            <input type="text" id="lastname">
+            <span></span>
+            <label>Last Name</label>
+          </div>
+        <input type="submit" value="Create an account">
+        <input type="checkbox">
+        <label for="checkbox">Remember me</label>
+        <div class="signup">Have an account? &nbsp <a href="login.html">Login</a></div>
+      </form>
+    </div>
+    <script src="../Validation/signupValidation.js"></script>
+    <script src="../Js/signup.js"></script>
+  </body>
+</html>

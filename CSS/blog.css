@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #0b0b0b;
+  font-family: "Outfit", sans-serif;
+}
+
+::-webkit-scrollbar {
+  background-color: #0b0b0b;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--myColor);
+}
+
+ul {
+  list-style-type: none;
+}
+
+:root {
+  --myColor: rgb(148, 130, 27);
+}
+
+#login_css {
+  border: 1px solid white;
+  padding: 5px 12px 8px 12px;
+  border-radius: 0.6em;
+  transition: box-shadow 200ms ease-in-out, color 300ms ease-in-out;
+}
+
+#login_css:hover{
+  color: white;
+  font-weight: normal;
+  box-shadow: 0 0 40px 40px var(--myColor) inset;
+  border: 1px solid var(--myColor);
+}
+
+.title__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.title__container h2 {
+  color: white;
+}
+
+.title__container p {
+  color: #999999;
+}
+
+
+.design {
+  position: relative;
+}
+
+.design .background {
+  height: 10rem;
+  width: 12rem;
+  background: var(--myColor);
+  position: absolute;
+  z-index: -1;
+  left: -10px;
+  top: -8px;
+}
+
+.right .background {
+  top: auto;
+  left: auto;
+  right: -10px;
+  bottom: -8px;
+}
+
+.defaultMargin {
+  margin: 0 14rem;
+}
+
+h3 {
+  color: white;
+}
+
+p {
+  color: #818080;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #0b0b0b;
+  color: white;
+  padding: 2rem 0;
+  position: sticky;
+  top: 0;
+  margin: 0 0 20px 0;
+  text-align: center;
+  padding: 8px 20px 8px 20px;
+  z-index: 2;
+}
+
+.navbar .brand__container {
+  display: flex;
+}
+
+.navbar .brand__container .brand h2 {
+  color: var(--myColor);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.navbar .brand__container .toggle {
+  display: none;
+}
+
+.navbar .links ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar .links ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 23px;
+}
+
+.navbar .links ul li a:hover {
+  color: var(--myColor);
+  font-weight: bold;
+}
+
+.navbar .links ul li i:hover {
+  color: var(--myColor);
+  font-weight: bold;
+}
+
+.hero {
+    overflow: hidden;
+    height: 100%;
+    padding: 15px;
+    margin: auto;
+    max-width: 50%;
+    text-align: center;
+  }
+  
+  .hero .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .hero .content .title h1 {
+    color: var(--myColor);
+    font-size: 4vw;
+    text-align: center;
+  }
+  
+  .hero .image {
+    position: relative;
+  }
+  
+  .hero .image img {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+
+.container-fluid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+    margin: auto;
+    max-width: 97%;
+} 
+
+.content_area{
+    padding: 30px;
+}
+
+.content_area h3{
+  font-size: 30px;
+}
+
+.content_area p{
+  font-size: 20px;
+}
+
+.content_area p a{
+  text-decoration: none;
+  color: var(--myColor);
+  font-weight: bold;
+}
+
+/* Comment section */
+
+.container
+{
+    width: 600px;
+    border: 2px solid #333;
+    padding: 15px 10px;
+    background-color: #f5f6f6;
+}
+.container h2
+{
+    text-align: center;
+    margin-bottom: 15px
+}
+textarea
+{
+    height: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    background-color: transparent;
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+    transition: .5s
+}
+
+input[type="submit"], button
+{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type="submit"]
+{
+    color: #fff;
+    background-color: var(--myColor);
+}
+button
+{
+    color: #333;
+    background-color: transparent
+}
+.btn
+{
+    display: none
+}
+
+.like__btn{
+    background: var(--myColor) ;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.like_comment{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    max-width: 97%;
+}
+
+#comment{
+  color: white;
+  text-align: center;
+  padding: 40px 30px 0px 30px;
+  font-size: 25px;
+}
+
+#postId{
+  display: grid;
+  grid-template-columns: auto auto;
+}
